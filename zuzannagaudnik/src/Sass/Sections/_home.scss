@@ -1,0 +1,20 @@
+.home {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    &__logo {
+        background-image: url("../Images/logo.png");
+        background-size: cover;
+        background-position: center;
+        margin: 0 auto;
+        width: 12rem;
+        height: 12rem;
+
+        @include notebook{
+            scale: 1.4;
+        }
+    }
+}
