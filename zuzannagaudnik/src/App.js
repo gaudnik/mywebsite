@@ -1,17 +1,26 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import "./Sass/index.scss";
-import Home from "./Components/Home";
+import React from 'react';
+import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
+import Navbar from './Components/Navbar';
+import Home from './Components/Home';
+import Aboutme from './Components/Aboutme';
+import Contact from './Components/Contact';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-       <Router>
-        <Routes>
-          <Route exact path="/" element={<Home/>}/>
-        </Routes>
-      </Router>
+    <Router>
+    <div>
+      <Navbar />
+
+      <hr />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<Aboutme />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </div>
+  </Router>
   );
-}
+};
 
 export default App;
