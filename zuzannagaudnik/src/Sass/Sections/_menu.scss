@@ -13,7 +13,9 @@
             float: right;
             align-items: center;
             width: 100%;
-            background-color: red;
+            position: absolute;
+            margin-top: 4rem;
+            background-color: $beige-color;
             @include notebook{
               display: none;
             }
@@ -26,7 +28,7 @@
             font-weight: 700; 
             font-size: 1.5rem;
             a{
-              color: blue;
+              color: $primary-color;
 
             }
            
