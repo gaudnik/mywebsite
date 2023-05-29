@@ -33,7 +33,7 @@
             }
            
             a:active {
-              color: pink;
+              color: $beige-dark-color;
             }
           }
         }
@@ -73,17 +73,20 @@
         display: flex;
         justify-content: flex-end;
         padding-right: 4.5rem;
-        padding-bottom: 2rem;
+        padding: 2rem;
 
         .menu__element{
           padding-left: 3.5rem;
+          text-align: center;
 
           a{
-            color: grey;
+            color: $color-white;
+            padding: 1rem;
           }
           :hover{
-            padding: 1rem;
-            border: 1px solid grey
-
-        }
+            color: $beige-dark-color;
+          }
+          :active {
+            box-shadow: $color-shadow-clicked; 
+          }
     }}}
