@@ -1,10 +1,13 @@
 @import "./Generic/reset";
 
+@import "./Variables/colors";
+
+
 @import "./Settings/mixins";
 @import "./Settings/base";
 @import "./Settings/fonts";
-
-@import "./Variables/colors";
+@import "./Settings/buttons";
 
 @import "./Sections/menu";
 @import "./Sections/home";
+@import "./Sections/aboutme";

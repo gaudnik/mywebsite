@@ -1,11 +1,60 @@
 @mixin notebook {
-    @media (min-width: 1024px) {
-      @content;
-    }
+  @media (min-width: 1024px) {
+    @content;
   }
-  
-  @mixin tablet {
-    @media (min-width: 600px) {
-      @content;
-    }
+}
+
+@mixin tablet {
+  @media (min-width: 805px) {
+    @content;
   }
+}
+
+@mixin sections_mobile {
+  display:block;
+  width: 100%;
+  height: auto;
+  padding: 6rem 2rem;
+  margin: 0 auto;
+}
+
+@mixin sections_tablet {
+  display: flex;
+  width: 90%;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  padding: 6rem 6rem;
+}
+
+@mixin sections_centered_description {
+  h1 {
+    padding-top: 3rem;
+  }
+  @include notebook{
+    padding: 6rem 6rem;
+  }
+  margin-bottom: 5rem;
+  width: 90%;
+}
+
+@mixin sections_notebook {
+  height: 80vh;
+}
+
+@mixin my_img {
+  background-size: cover;
+  background-position: right;
+  width: 18rem;
+  height: 25rem;
+  border-radius: 20px;
+
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  outline: none;
+}
+
+@mixin headers {
+  color: $dark-brown;
+}

@@ -1,0 +1,53 @@
+.btn{
+    display: none;
+
+    @include notebook {
+        display: inline;
+        margin: 20px auto;
+        border: none;
+        padding: 10px 44px;
+        position: relative;
+        font-size: 1.2rem;
+        &::before {
+            transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            content: '';
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &.rounded {
+            border-radius:50px;
+            & .text-brown {
+                color:$btn-color;
+                mix-blend-mode: difference;
+            }
+            
+            &::before {
+                border-radius: 50px;
+                width: 16%;
+                background: $dark-brown;
+            }
+            &:hover {
+                &::before {
+                background: $dark-brown;
+                    width: 100%;
+                }
+            }	
+        }
+    }
+}
+
+.btn_mobile {
+    padding:10px 44px ;
+    background-color: $dark-brown;
+    color: $primary-color;
+    border-radius: 50px;
+    font-size: 1.2rem;
+
+    @include notebook {
+        display: none;
+    }
+}

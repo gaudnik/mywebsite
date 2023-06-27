@@ -16,7 +16,7 @@
             width: 100%;
             position: absolute;
             margin-top: 4rem;
-            background-color: $beige-color;
+            background-color: $color-white;
             @include notebook{
               display: none;
             }
@@ -29,7 +29,7 @@
             font-weight: 700; 
             font-size: 1.5rem;
             a{
-              color: $primary-color;
+              color: $beige-dark-color;
 
             }
            
@@ -73,12 +73,10 @@
 
     @include notebook{
         display: flex;
-        justify-content:center;
-        padding-right: 4.5rem;
+        justify-content: space-evenly;
         padding: 2rem;
 
         .menu__element{
-          padding-left: 3.5rem;
           text-align: center;
 
           a{

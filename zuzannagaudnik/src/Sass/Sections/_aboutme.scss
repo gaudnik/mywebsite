@@ -1,0 +1,45 @@
+.aboutme {
+    @include sections_mobile;
+    
+    @include tablet {
+        @include sections_tablet;
+    }
+
+    @include notebook {
+        @include sections_notebook;
+    }
+
+    &__description {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+
+        @include notebook {
+            width: 60%;
+        }
+    }
+   
+    &__image {
+        background-image: url("../Images/myphoto.jpeg");
+       @include my_img;
+       background-position: top;
+       margin-bottom: 1rem;
+       width: 13rem;
+       height: 16rem; 
+        @include notebook {
+            width: 16rem;
+            height: 20rem; 
+            margin: 3rem; 
+        }
+    }
+    &__description {
+        @include headers;
+        h2 {
+            line-height: 4rem;
+        }
+    }
+    &__text {
+        line-height: 1.5rem;
+        margin: 2rem;
+    }
+}
