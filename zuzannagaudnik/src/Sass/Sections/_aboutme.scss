@@ -8,6 +8,7 @@
 
     @include notebook {
         @include sections_notebook;
+        overflow: hidden;
     }
 
     &__description {

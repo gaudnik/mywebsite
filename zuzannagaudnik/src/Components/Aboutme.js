@@ -37,7 +37,7 @@ const AboutMe = () => {
                     I am characterized by creativity, high personal culture, resistance to stress.
                 </p>
                 <a
-                    className="btn rounded btn--difference"
+                    className="btn rounded"
                     href="https://www.linkedin.com/in/zuzanna-gaudnik/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -45,7 +45,7 @@ const AboutMe = () => {
                     <span className="text-brown">Open my LinkedIn</span>
                 </a>
                 <a
-                    className="btn_mobile"
+                    className="btn_mobile btn--difference"
                     href="https://www.linkedin.com/in/zuzanna-gaudnik/"
                     target="_blank"
                     rel="noopener noreferrer"
