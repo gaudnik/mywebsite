@@ -39,7 +39,6 @@
         }
     }
     &__text {
-        line-height: 1.5rem;
-        margin: 2rem;
+        @include text;
     }
 }

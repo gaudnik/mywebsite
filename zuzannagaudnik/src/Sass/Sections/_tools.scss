@@ -1,0 +1,150 @@
+.tools {
+    @include sections_mobile;
+
+    @include tablet {
+        @include sections_centered_description;
+    }
+
+    @include notebook {
+        @include sections_notebook;
+    }
+    
+    &__header {
+        text-align: center;
+    }
+
+    &__text {
+        @include text;
+        margin: 1rem;
+        @include tablet {
+            
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+        height: auto;
+        justify-content: center;
+        margin: 0  auto;
+        padding-bottom: 3rem;
+    }
+
+    &__tool {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 1rem;
+        margin: 0.3rem;
+        background-size: cover; 
+        background-color: aliceblue; 
+        background-position: center;
+        opacity: 0;
+        transform: translateX(-100%);
+
+        @include tablet {
+            margin: 1rem;
+            width: 5rem; 
+            height: 5rem;
+        }
+
+        @include notebook {
+            margin: 1rem;
+            width: 5rem;
+            height: 5rem;
+            transition: transform 0.3s ease-in-out;
+            &:hover {
+                 transform: scale(1.1);
+            }
+        }
+    }
+    @keyframes slideInFromLeft {
+        0% {
+          opacity: 0;
+          transform: translateX(-100%);
+        }
+        100% {
+          opacity: 0.8;
+          transform: translateX(0);
+        }
+      }
+    
+    &__tool:first-child {
+        background-image: url("../Images/JS-logo.png");  
+        animation: slideInFromLeft 0.5s ease-in-out 0.1s forwards;
+    }
+
+    &__tool:nth-child(2) {
+        background-image: url("../Images/react.png");
+        animation: slideInFromLeft 0.5s ease-in-out 0.2s forwards;
+    }
+
+    &__tool:nth-child(3) {
+        background-image: url("../Images/node.jpg");
+        animation: slideInFromLeft 0.5s ease-in-out 0.3s forwards;
+    }
+
+    &__tool:nth-child(4) {
+        background-image: url("../Images/babel.png");
+        animation: slideInFromLeft 0.5s ease-in-out 0.4s forwards;
+    }
+
+    &__tool:nth-child(5) {
+        background-image: url("../Images/html.png");
+        animation: slideInFromLeft 0.5s ease-in-out 0.5s forwards;
+    }
+
+    &__tool:nth-child(6) {
+        background-image: url("../Images/css_nowe_logo.png");
+        animation: slideInFromLeft 0.5s ease-in-out 0.6s forwards;
+    }
+
+    &__tool:nth-child(7) {
+        background-image: url("../Images/JSON_vector_logo.svg.png");
+        animation: slideInFromLeft 0.5s ease-in-out 0.7s forwards; 
+    }
+
+    &__tool:nth-child(8) {
+        background-image: url("../Images/gulp.png");
+        animation: slideInFromLeft 0.5s ease-in-out 0.8s forwards;
+    }
+
+    &__tool:nth-child(9) {
+        background-image: url("../Images/webpack.png");
+        animation: slideInFromLeft 0.5s ease-in-out 0.9s forwards;
+    }
+    &__tool:nth-child(10) {
+        background-image: url("../Images/sass.png");
+        animation: slideInFromLeft 0.5s ease-in-out 1.0s forwards;
+    }
+
+    &__tool:nth-child(11) {
+        background-image: url("../Images/npm.png");
+        animation: slideInFromLeft 0.5s ease-in-out 1.1s forwards;
+    }
+
+    &__tool:nth-child(12) {
+        background-image: url("../Images/firebase.png");
+        animation: slideInFromLeft 0.5s ease-in-out 1.2s forwards;
+    }
+
+    &__tool:nth-child(13) {
+        background-image: url("../Images/jira.jpg");
+        animation: slideInFromLeft 0.5s ease-in-out 1.3s forwards;
+    }
+
+    &__tool:nth-child(14) {
+        background-image: url("../Images/github.png");
+        animation: slideInFromLeft 0.5s ease-in-out 1.4s forwards;
+    }
+
+    &__tool:nth-child(15) {
+        background-image: url("../Images/Git-Icon-1788C.png");
+        animation: slideInFromLeft 0.5s ease-in-out 1.5s forwards;
+    }
+
+    &__tool:nth-child(16) {
+        background-image: url("../Images/trello.png");
+        animation: slideInFromLeft 0.5s ease-in-out 1.6s forwards;
+    }
+}

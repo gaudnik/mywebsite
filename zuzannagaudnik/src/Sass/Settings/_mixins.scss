@@ -58,3 +58,9 @@
 @mixin headers {
   color: $dark-brown;
 }
+
+@mixin text {
+  line-height: 1.5rem;
+  margin: 2rem;
+  text-align: center;
+}
