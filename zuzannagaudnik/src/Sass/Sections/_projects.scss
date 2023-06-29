@@ -1,0 +1,69 @@
+.projects {
+    @include sections_mobile;
+
+    @include tablet {
+        @include sections_tablet;
+        display: block;
+    }
+
+    @include notebook {
+        @include sections_notebook;
+        display: block;
+    }
+    
+    &__description {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 3rem;
+        @include headers;
+        h2 {
+            line-height: 4rem;
+        }
+
+    }
+    &__text {
+        @include text;
+    }
+
+    &__github {
+        background-image: url("../Images/github.png");
+        background-size: cover;
+        width: 2rem;
+        height: 2rem;
+    }
+    &__box{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 2rem;
+    }
+
+    &__image_1 {
+        background-image: url("../Images/hpquiz.jpg");
+       @include my_img;
+
+        @include notebook{
+            margin-top: 0;
+        }
+    }
+    &__image_2{
+        background-image: url("../Images/th_1_mobile.jpg");
+        @include my_img;
+        background-size: cover;
+        background-position: top;
+
+    }
+    
+
+    &__harrypotter {
+        padding-top: 12rem;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+        
+    .btn {
+        @include notebook{
+            mix-blend-mode:normal;
+        }
+    }
+}

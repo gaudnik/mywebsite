@@ -6,6 +6,7 @@ import Aboutme from './Components/Aboutme';
 import Tools from './Components/Tools';
 import Contact from './Components/Contact';
 import Projects from './Components/Projects';
+import ScoutTest from './Components/ScoutTest';
 
 const App = () => {
   return (
@@ -16,11 +17,10 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutme" element={<Aboutme />} />
-        <Route path='/Tools' element={<Tools/>}/>
-        <Route path='/Tools' element={<Projects/>}/>
-
+        <Route path='/tools' element={<Tools/>}/>
+        <Route path='/projects' element={<Projects/>}/>
         <Route path="/contact" element={<Contact />} />
-
+        <Route path='/testharcerski' element={<ScoutTest/>}/>
       </Routes>
     </div>
   </Router>
