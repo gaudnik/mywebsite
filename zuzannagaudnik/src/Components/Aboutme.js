@@ -1,6 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
+import "animate.css/animate.min.css";
 
 const AboutMe = () => {
+    useEffect(() => {
+        const image = document.querySelector(".aboutme__image");
+        const description = document.querySelector(".aboutme__description");
+        const buttons = document.querySelectorAll(".btn");
+    
+        image.classList.add("animate__animated", "animate__fadeInLeft");
+        description.classList.add("animate__animated", "animate__fadeInRight");
+    
+        buttons.forEach((button) => {
+          button.classList.add("btn--difference");
+        });
+    
+        return () => {
+          image.classList.remove("animate__animated", "animate__fadeInLeft");
+          description.classList.remove("animate__animated", "animate__fadeInRight");
+    
+          buttons.forEach((button) => {
+            button.classList.remove("btn--difference");
+          });
+        };
+      }, []);
+
     return (
         <section className="aboutme" id="aboutme">
             <div className="aboutme__image"></div>
@@ -14,7 +37,7 @@ const AboutMe = () => {
                     I am characterized by creativity, high personal culture, resistance to stress.
                 </p>
                 <a
-                    className="btn rounded"
+                    className="btn rounded btn--difference"
                     href="https://www.linkedin.com/in/zuzanna-gaudnik/"
                     target="_blank"
                     rel="noopener noreferrer"
