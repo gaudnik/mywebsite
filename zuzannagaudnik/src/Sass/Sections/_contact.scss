@@ -30,7 +30,7 @@
     }
 
     &__form {
-        width: 70%;
+        width: 100%;
         display: block;
         margin: 0 auto;
         padding: 0.5rem;
@@ -60,6 +60,7 @@
         margin-bottom: 2rem;
     }
     .btn_mobile {
+        width: 100%;
         @include notebook {
             display:inline;
         }
