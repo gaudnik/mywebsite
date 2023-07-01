@@ -16,9 +16,6 @@
     &__text {
         @include text;
         margin: 1rem;
-        @include tablet {
-            
-        }
     }
 
     &__box {

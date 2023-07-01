@@ -33,7 +33,7 @@ const Projects = () => {
                     <h2 className="projects__harrypotter">Harry Potter<br/> Quiz</h2>
                 </div>
             </a> 
-            <a target="blank" href="/testharcerski">
+            <a href="/testharcerski">
                 <div className="projects__image_2">
                 </div>
             </a> 

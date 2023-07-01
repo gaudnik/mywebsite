@@ -17,13 +17,11 @@
         justify-content: center;
         margin-bottom: 3rem;
         @include headers;
-        h2 {
-            line-height: 4rem;
-        }
-
     }
+
     &__text {
         @include text;
+        margin-bottom: 2rem;
     }
 
     &__github {
@@ -32,29 +30,33 @@
         width: 2rem;
         height: 2rem;
     }
-    &__box{
+
+    &__box {
+        display: block;
+
+        @include notebook {
         display: flex;
         justify-content: space-evenly;
-        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        }
     }
 
     &__image_1 {
         background-image: url("../Images/hpquiz.jpg");
-       @include my_img;
+        @include my_img;
 
-        @include notebook{
+        @include notebook {
             margin-top: 0;
         }
     }
-    &__image_2{
+
+    &__image_2 {
         background-image: url("../Images/th_1_mobile.jpg");
         @include my_img;
         background-size: cover;
         background-position: top;
-
     }
     
-
     &__harrypotter {
         padding-top: 12rem;
         font-size: 1.5rem;
@@ -62,7 +64,7 @@
     }
         
     .btn {
-        @include notebook{
+        @include notebook {
             mix-blend-mode:normal;
         }
     }
