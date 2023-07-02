@@ -25,7 +25,7 @@ const Projects = () => {
                     </a>
                     <a
                     className="btn_mobile btn--difference"
-                    href="https://www.linkedin.com/in/zuzanna-gaudnik/"
+                    href="https://github.com/gaudnik"
                     target="_blank"
                     rel="noopener noreferrer"
                 >

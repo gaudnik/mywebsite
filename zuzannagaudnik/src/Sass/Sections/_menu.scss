@@ -9,15 +9,17 @@
       
         &:checked {
           & ~ .menu__nav {
-            display: flex;
-            flex-direction: column;
-            z-index: 5;
-            float: right;
-            align-items: center;
-            width: 100%;
-            position: absolute;
-            margin-top: 4rem;
-            background-color: $color-white;
+              display: flex;
+              z-index: 5;
+              width: 55%; 
+              position: absolute;
+              margin-top: 4rem;
+              margin-left: 2rem;
+              padding: 2rem;
+              background-color: $primary-color;
+              opacity: 0.9;
+              flex-direction: column;
+              border-radius: 20px;
             @include notebook{
               display: none;
             }
@@ -25,10 +27,13 @@
           .menu__element {
             padding-bottom: 1rem;
             padding-top: 1rem;
-            width: 100%;
             text-align: center;
-            font-weight: 700; 
+            font-weight: 700;
             font-size: 1.5rem;
+            border: 1px solid $beige-dark-color;
+            background-color: $color-white;
+            border-radius: 50px;
+            margin: 0.5rem;
             a{
               color: $beige-dark-color;
 
@@ -44,8 +49,8 @@
     
 
     &__toggle {
+      position: fixed;
       display: block;
-      float: right;
       margin: 2rem;
 
       span {
