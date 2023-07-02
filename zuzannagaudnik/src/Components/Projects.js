@@ -1,7 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Projects = () => {
+    const navigate = useNavigate();
 
+  const handleTestHarcerskiClick = () => {
+    navigate("/testharcerski");
+  };
     return (
         <section className="projects">
             <div className="projects__description">
@@ -33,8 +38,8 @@ const Projects = () => {
                     <h2 className="projects__harrypotter">Harry Potter<br/> Quiz</h2>
                 </div>
             </a> 
-            <a href="/testharcerski">
-                <div className="projects__image_2">
+            <a>
+                <div className="projects__image_2" onClick={handleTestHarcerskiClick}>
                 </div>
             </a> 
             </div>  

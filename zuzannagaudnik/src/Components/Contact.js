@@ -1,14 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Contact = () => {
   const [formStatus, setFormStatus] = React.useState('Send');
+  const navigate = useNavigate();
+
 
   const onSubmit = (e) => {
     e.preventDefault();
     const { name, email, message } = e.target.elements;
 
     if (!name.value || !email.value || !message.value) {
-      // Jeśli któreś pole jest puste, nie wykonuj przekierowania
       return;
     }
 
@@ -20,9 +22,8 @@ const Contact = () => {
       message: message.value,
     };
     console.log(conFom);
+    navigate('/send_message');
 
-    // Przekierowanie do podstrony
-    window.location.href = "/send_message";
   };
 
   return (
@@ -55,10 +56,11 @@ const Contact = () => {
             </label>
             <textarea className="contact__control message" id="message" required />
           </div>
-
+       
           <button type="submit" className="btn_mobile btn--difference" rel="noopener noreferrer">
             {formStatus}
           </button>
+
         </form>
       </div>
     </section>
