@@ -16,12 +16,15 @@
     &__text {
         @include text;
         margin: 1rem;
+        @include notebook {
+            margin: 3rem;
+        }
     }
 
     &__box {
         display: flex;
         flex-wrap: wrap;
-        width: 95%;
+        width: 80%;
         height: auto;
         justify-content: center;
         margin: 0  auto;
@@ -32,7 +35,7 @@
         width: 4rem;
         height: 4rem;
         border-radius: 1rem;
-        margin: 0.3rem;
+        margin: 0.8rem;
         background-size: cover; 
         background-color: aliceblue; 
         background-position: center;

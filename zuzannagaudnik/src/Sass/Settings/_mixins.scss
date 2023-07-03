@@ -62,7 +62,12 @@
 }
 
 @mixin text {
-  line-height: 1.5rem;
-  margin: 1rem;
+  margin: 3rem;
   text-align: center;
+  line-height: 1.5rem;
+
+  @include notebook {
+  margin: 1rem;
+  
+  }
 }

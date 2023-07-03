@@ -27,6 +27,12 @@
         height: auto;
         align-items: center;
         justify-content: center;
+
+        @include notebook{
+            box-shadow: 8px 9px 10px;
+            border-radius: 20px;
+            padding: 2rem;
+        }
     }
 
     &__form {
@@ -37,7 +43,7 @@
         text-align: center;
        
         @include notebook {
-            width: 100%;
+            width: 100%;    
         }
     }
 

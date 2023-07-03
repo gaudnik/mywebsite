@@ -22,6 +22,9 @@
     &__text {
         @include text;
         margin-bottom: 2rem;
+        @include notebook {
+            margin: 3rem;
+        }
     }
 
     &__github {

@@ -40,9 +40,11 @@
             line-height: 4rem;
         }
     }
-    &__text {
+    &__text {       
         @include text;
-        margin-bottom: 2rem;
-
+        margin-bottom: 4rem;
+        @include notebook {
+            margin: 3rem;
+        }
     }
 }
