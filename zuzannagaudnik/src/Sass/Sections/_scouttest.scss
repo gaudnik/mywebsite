@@ -34,7 +34,7 @@
         object-fit: cover;
         cursor: pointer;
         box-shadow: 8px 9px 10px $dark-brown;
-
+        border-radius: 20px;
       }
     &__photo {
 
@@ -60,6 +60,7 @@
     height: auto;
     object-fit: cover;
     cursor: pointer;
+    margin: 2rem;
   }
   
   
