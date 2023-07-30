@@ -1,6 +1,8 @@
 
 .aboutme {
+    overflow: hidden;
     @include sections_mobile;
+
     
     @include tablet {
         @include sections_tablet;
@@ -8,7 +10,6 @@
 
     @include notebook {
         @include sections_notebook;
-        overflow: hidden;
         padding:0 6rem;
     }
 
