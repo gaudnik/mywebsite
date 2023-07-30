@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
+
 const Contact = () => {
   const [formStatus, setFormStatus] = React.useState('Send');
   const navigate = useNavigate();
@@ -23,7 +24,7 @@ const Contact = () => {
     };
     console.log(conFom);
     navigate('/send_message');
-
+    
   };
 
   return (

@@ -8,6 +8,7 @@ import Contact from './Components/Contact';
 import Projects from './Components/Projects';
 import ScoutTest from './Components/ScoutTest';
 import SentMessage from './Components/SendMessage';
+import Footer from './Components/Footer';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path='/testharcerski' element={<ScoutTest/>}/>
         <Route path='/send_message' element={<SentMessage/>}/>
       </Routes>
+      <Footer/>
     </div>
   </Router>
   );

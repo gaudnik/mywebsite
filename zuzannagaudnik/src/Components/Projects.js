@@ -11,10 +11,9 @@ const Projects = () => {
         <section className="projects">
             <div className="projects__description">
                 <h2>Projects</h2>
-                <p className="projects__text">In this project written with the React.js framework, I used react-create-app,
-                     JSON server and Syntactically Awesome Style Sheets (Sass). I made this 
-                     project in my free time because I like Harry Potter :). If you are too, 
-                     test your knowledge!</p>
+                <p className="projects__text">On this page, you can find my projects/creations.
+                <br/>
+                 If you want to see more of my code, check out my GitHub.</p>
                      <a
                         className="btn rounded"
                         href="https://github.com/gaudnik"

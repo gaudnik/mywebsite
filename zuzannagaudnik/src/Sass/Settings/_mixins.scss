@@ -40,7 +40,8 @@
 }
 
 @mixin sections_notebook {
-  height: 80vh;
+  padding-bottom: 0;
+  height: 100vh;
 }
 
 @mixin my_img {
