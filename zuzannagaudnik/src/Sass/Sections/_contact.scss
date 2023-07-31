@@ -1,6 +1,8 @@
 .contact {
     @include sections_mobile;
     margin: 0 auto;
+    height: 100vh;
+
     
     @include tablet {
         @include sections_tablet;
@@ -24,7 +26,7 @@
     &__container {
         display: flex;
         margin: 0 auto;
-        height: 70%;
+        height: 60%;
         align-items: center;
         justify-content: center;
 

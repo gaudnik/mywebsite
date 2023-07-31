@@ -2,7 +2,7 @@
 .aboutme {
     overflow: hidden;
     @include sections_mobile;
-
+    height: 100vh;
     
     @include tablet {
         @include sections_tablet;

@@ -39,9 +39,7 @@
 
 @mixin sections_notebook {
   padding-bottom: 0;
-  height: 90vh;
   @include notebook {
-    height: 100vh;
   }
 }
 
