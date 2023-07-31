@@ -1,6 +1,6 @@
 .tools {
     @include sections_mobile;
-    height: auto;
+    height: 100vh;
 
     @include tablet {
         @include sections_centered_description;
