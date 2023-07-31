@@ -13,7 +13,7 @@ import Footer from './Components/Footer';
 const App = () => {
   return (
     <Router>
-    <div>
+    <div className='background__container'>
       <Menu />
 
       <Routes>
