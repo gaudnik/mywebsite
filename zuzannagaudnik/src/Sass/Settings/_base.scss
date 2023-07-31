@@ -7,6 +7,9 @@ $font-base:'Montserrat', sans-serif;
 
   html {
     font-size: 13px;
+    @include notebook {
+      font-size: 11px;
+    }
   }
   
   .background__container {
