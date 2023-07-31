@@ -11,18 +11,19 @@
           & ~ .menu__nav {
               display: flex;
               z-index: 5;
-              width: 55%; 
-              position: absolute;
+              width: 86%; 
+              position: fixed;
               margin-top: 4rem;
               margin-left: 2rem;
               padding: 2rem;
-              background-color: $primary-color;
+              background-color: $color-white;
               opacity: 0.9;
               flex-direction: column;
               border-radius: 20px;
-            @include notebook{
-              display: none;
-            }
+
+              @include notebook{
+                display: none;
+              }
 
           .menu__element {
             padding-bottom: 1rem;
@@ -30,8 +31,6 @@
             text-align: center;
             font-weight: 700;
             font-size: 1.5rem;
-            background-color: $color-white;
-            border-radius: 50px;
             margin: 0.5rem;
             a{
               color: $beige-dark-color;
