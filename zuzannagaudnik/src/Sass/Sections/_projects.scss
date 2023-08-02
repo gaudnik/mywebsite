@@ -1,80 +1,90 @@
 .projects {
+    overflow: hidden;
     @include sections_mobile;
-
+  
     @include tablet {
-        @include sections_tablet;
-        display: block;
+      @include sections_tablet;
+      display: block;
     }
-
+  
     @include notebook {
-        @include sections_notebook;
-        display: block;
+      @include sections_notebook;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-start;
     }
-    
+  
     &__description {
-        width: 100%;
-        text-align: center;
-        justify-content: center;
-        margin-bottom: 3rem;
-        @include headers;
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      margin-bottom: 3rem;
+      @include headers;
     }
-
+  
     &__text {
-        @include text;
-        margin-bottom: 2rem;
-        @include notebook {
-            margin: 3rem;
-        }
+      @include text;
+      margin-bottom: 2rem;
+      @include notebook {
+        margin: 3rem;
+      }
     }
-
+  
     &__github {
-        background-image: url("../Images/github.png");
-        background-size: cover;
-        width: 2rem;
-        height: 2rem;
+      background-image: url("../Images/github.png");
+      background-size: cover;
+      width: 2rem;
+      height: 2rem;
     }
-
+  
     &__box {
-        display: block;
-
-        @include notebook {
+      display: block;
+  
+      @include tablet {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         padding-bottom: 5rem;
-        }
+        margin-top: 6rem;
+      }
+      @include notebook {
+        margin-top: 17rem;
+        margin-left: 6rem;
+      }
     }
-
+  
     &__image_1 {
-        background-image: url("../Images/hpquiz.jpg");
-        @include my_img;
-        background-position: center;
-        margin-bottom: 2rem;
-
-        @include notebook {
-            margin-bottom: 0;
-            margin-top: 0;
-        }
+      background-image: url("../Images/hpquiz.jpg");
+      @include my_img;
+      background-position: center;
+      margin-bottom: 2rem;
+  
+      @include tablet {
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-right: 4rem;
+      }
     }
-
+  
     &__image_2 {
-        background-image: url("../Images/th_1_mobile.jpg");
-        @include my_img;
-        background-size: cover;
-        background-position: top;
-        cursor: pointer;
+      background-image: url("../Images/th_1_mobile.jpg");
+      @include my_img;
+      background-size: cover;
+      background-position: top;
+      cursor: pointer;
     }
-    
+  
     &__harrypotter {
-        padding-top: 3rem;
-        padding-left: 3rem;
-        font-size: 1.5rem;
-        font-weight: 300;
-        color: $primary-color;
+      padding-top: 3rem;
+      padding-left: 3rem;
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: $primary-color;
     }
-        
+  
     .btn {
-        @include notebook {
-            mix-blend-mode:normal;
-        }
+      @include notebook {
+        mix-blend-mode: normal;
+      }
     }
-}
+  }
+  

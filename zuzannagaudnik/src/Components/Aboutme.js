@@ -35,6 +35,9 @@ const AboutMe = () => {
                     projects but I am considering a change from freelancing to a long-term project, 
                     and preferably permanent employment.
                     I am characterized by creativity, high personal culture, resistance to stress.
+                    <br/>
+                    In my free time, I hike in the mountains, read books about war themes, paint pictures, 
+                    and take photographs. Recently, I have also started playing chess!
                 </p>
                 <a
                     className="btn rounded"

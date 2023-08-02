@@ -1,4 +1,5 @@
 .contact {
+    overflow: hidden;
     @include sections_mobile;
     margin: 0 auto;
     height: 100vh;
@@ -6,13 +7,13 @@
     
     @include tablet {
         @include sections_tablet;
+        height: auto;
     }
 
     @include notebook {
-        @include sections_notebook;
         width: 80%;
-        align-items: normal;
-
+        display: flex;
+        align-items: baseline;
     }
     
     &__img {
@@ -26,11 +27,10 @@
     &__container {
         display: flex;
         margin: 0 auto;
-        height: 60%;
-        align-items: center;
         justify-content: center;
 
         @include notebook{
+            align-items: center;
             box-shadow: 8px 9px 10px;
             border-radius: 20px;
             padding: 2rem;
@@ -67,12 +67,6 @@
         height: 4rem;
         margin-bottom: 2rem;
     }
-    .btn_mobile {
-        width: 100%;
-        @include notebook {
-            display:inline;
-        }
-    }
 
     &__label {
         color: $dark-brown;  
@@ -91,4 +85,18 @@
             margin-bottom: 2rem;
         }
     }
+   &__btn {
+    display: none;
+    @include notebook{
+    display:block;
+    width: 100%;
+    }
+   }
+   &__btn__mobile {
+    display: block;
+    text-align: center;
+    @include notebook {
+        display: none;
+    }
+   }
 }

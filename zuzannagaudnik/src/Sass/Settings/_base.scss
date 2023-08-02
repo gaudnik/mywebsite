@@ -7,7 +7,7 @@ $font-base:'Montserrat', sans-serif;
 
   html {
     font-size: 13px;
-    @include notebook {
+    @include tablet {
       font-size: 11px;
     }
   }
@@ -17,7 +17,6 @@ $font-base:'Montserrat', sans-serif;
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    height: auto;
     font-family: $font-base;
   }
     

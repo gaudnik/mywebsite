@@ -1,10 +1,9 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import "animate.css/animate.min.css";
 
 
 const Contact = () => {
-  const [formStatus, setFormStatus] = React.useState('Send');
-  const navigate = useNavigate();
+  const [formStatus, setFormStatus] = React.useState('');
 
 
   const onSubmit = (e) => {
@@ -22,20 +21,18 @@ const Contact = () => {
       email: email.value,
       message: message.value,
     };
-    console.log(conFom);
-    navigate('/send_message');
-    
+    console.log(conFom);    
   };
 
   return (
     <section name="contact" className="contact">
-      <div className="contact__description">
+      <div className="contact__description animate__animated animate__fadeInLeft">
         <h2>Contact</h2>
         <p>If you have questions, write to me.. I'll be happy to answer!</p>
         <div className="contact__img"></div>
       </div>
 
-      <div className="contact__container">
+      <div className="contact__container animate__animated animate__fadeInRight">
         <form onSubmit={onSubmit} action="emailform.php" method="post">
           <div className="contact__form">
             <label className="contact__label" htmlFor="name">
@@ -57,10 +54,22 @@ const Contact = () => {
             </label>
             <textarea className="contact__control message" id="message" required />
           </div>
-       
-          <button type="submit" className="btn_mobile btn--difference" rel="noopener noreferrer">
-            {formStatus}
-          </button>
+          <a
+                    className="btn rounded contact__btn"
+                    href='/send_message'
+                    rel="noopener noreferrer"
+                > {formStatus}
+
+                    <span className="text-brown">Submit</span>
+                </a>
+                <a
+                    className="btn_mobile btn--difference contact__btn__mobile"
+                    href='/send_message'
+                    rel="noopener noreferrer"
+                > {formStatus}
+
+                    <span className="text-brown">Submit</span>
+                </a>
 
         </form>
       </div>

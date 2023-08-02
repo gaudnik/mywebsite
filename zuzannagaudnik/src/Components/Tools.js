@@ -36,11 +36,6 @@ const Tools = () => {
           > </a>
           <a
             className="tools__tool"
-            href="https://nodejs.org/en/docs/"
-            target="blank"
-          > </a>
-          <a
-            className="tools__tool"
             href="https://babeljs.io/docs/en/"
             target="blank"
           > </a>

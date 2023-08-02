@@ -10,6 +10,8 @@
 
     @include notebook {
         @include sections_notebook;
+        justify-content: space-around;
+        align-items: baseline;
         padding:0 6rem;
     }
 
@@ -28,10 +30,10 @@
        @include my_img;
        background-position: top;
        margin-bottom: 1rem;
-       width: 13rem;
-       height: 16rem; 
+       width: 17rem;
+       height: 17rem; 
         @include notebook {
-            width: 16rem;
+            width: 20rem;
             height: 20rem; 
             margin: 3rem; 
         }
